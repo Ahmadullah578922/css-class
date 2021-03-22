@@ -1,0 +1,26 @@
+LIST STYLE:
+**********************
+1. list-style-type
+    -circle, square, upper-roman, lower-alpha, none
+
+2. list-style-image
+
+    ul {
+        list-style-image: url('sqpurple.gif');
+    }
+
+3. list-style-position
+
+    ul.a {
+    list-style-position: outside;
+    }
+
+    ul.b {
+    list-style-position: inside;
+    }   
+
+list-style: shorthand
+********************************
+ul {
+  list-style: square inside url("sqpurple.gif");
+} 

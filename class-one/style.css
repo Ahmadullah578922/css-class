@@ -1,0 +1,18 @@
+p{
+    color: red;
+    text-align: center;
+}
+.cselector{
+    color: blueviolet;
+    font-size: 25px;
+    /* text-align: left; */
+}
+#idselector{
+    background: green;
+    color: burlywood;
+}
+h2, .grouping{
+    text-align: center;
+    color: chartreuse;
+}
+

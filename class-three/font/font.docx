@@ -1,0 +1,133 @@
+****************************
+CSS FONTS STYLE 
+****************************
+-Choosing the right font has a huge impact on how the readers experience a website.The right font can create a strong identity for your brand. 
+-Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.
+
+Some Font Examples
+***************************************
+Serif 	
+    -Times New Roman
+    -Georgia
+    -Garamond
+Sans-serif 	
+    -Arial
+    -Verdana
+    -Helvetica
+Monospace 	
+    -Courier New
+    -Lucida Console
+    -Monaco
+Cursive 	
+    -Brush Script MT
+    -Lucida Handwriting
+Fantasy 	
+    -Copperplate
+    -Papyrus
+
+PROPERTIES:
+*********************
+-font-family 
+-font-style 
+-font-variant 
+-font-weight 
+-font-size 
+
+1. font-family 
+
+   .p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+} 
+
+Fallback Fonts:
+####################
+However, there are no 100% completely web safe fonts. There is always a chance that a font is not found or is not installed properly Therefore, it is very important to always use fallback fonts.
+
+This means that you should add a list of similar "backup fonts" in the font-family property. If the first font does not work, the browser will try the next one, and the next one, and so on. Always end the list with a generic font family name.
+
+Example
+
+Here, there are three font types: Tahoma, Verdana, and sans-serif. The second and third fonts are backups, in case the first one is not found.
+p {
+font-family: Tahoma, Verdana, sans-serif;
+} 
+
+Note: Before you publish your website, always check how your fonts appear on different browsers and devices, and always use fallback fonts!
+
+1. https://www.w3schools.com/css/css_font_websafe.asp
+Tip: Also check out all available Google Fonts and how to use them.
+
+2. font-style:
+**********************
+value: normal, italic 
+
+    p.normal {
+    font-style: normal;
+    }
+
+    p.italic {
+    font-style: italic;
+    }
+
+3. font-weight:
+**********************
+value: normal, bold, 
+p.thick {
+  font-weight: bold;
+} 
+
+4. font-variant:
+**********************
+value: normal, small-caps
+
+    p.normal {
+    font-variant: normal;
+    }
+
+    p.small {
+    font-variant: small-caps;
+    }
+
+5. font-size:
+**********************
+The font-size property sets the size of the text.
+
+Set Font Size With Em: 
+
+-To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+
+-1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+
+-The size can be calculated from pixels to em using this formula: pixels/16=em
+
+Responsive Font Size: 
+
+-The text size can be set with a vw unit, which means the "viewport width".
+
+Note: Follow google fonts or Bangla web fonts
+
+font:
+*********************
+The font property is a shorthand property for:
+    font-style
+    font-variant
+    font-weight
+    font-size/line-height
+    font-family
+    
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+

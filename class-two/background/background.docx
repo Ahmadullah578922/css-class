@@ -1,0 +1,69 @@
+CSS Backgrounds
+************************************
+1. background-color 
+2. background-image 
+3. background-repeat 
+4. background-attachment 
+5. background-position 
+6. background-size
+7. background 
+
+background-color:
+*********************
+    -a valid color name - like "red"
+    -a HEX value - like "#ff0000"
+    -an RGB value - like "rgb(255,0,0)"
+div {
+  background-color: lightblue;
+}
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+
+background-image:
+*********************
+The background-image property specifies an image to use as the background of an element.
+--Note: When using a background image, use an image that does not disturb the text.
+body {
+  background-image: url("paper.gif");
+}
+
+background-repeat:
+*********************
+-By default, the background-image property repeats an image both horizontally and vertically.
+-If the image above is repeated only horizontally (background-repeat: repeat-x;)
+-Tip: To repeat an image vertically, set background-repeat: repeat-y;
+-Showing the background image only once is also specified by the background-repeat property:
+---------background-repeat: no-repeat;
+
+background-position:
+*********************
+-left top, center, right, center top etc.
+-x% y%
+
+background-attachment:
+*********************
+The background-attachment property specifies whether the background image should scroll or be fixed
+--background-attachment: fixed;
+--background-attachment: scroll;
+
+background-size:
+*********************
+The background-size property specifies the size of the background images.
+
+There are four different syntaxes you can use with this property: 
+--the keyword syntax ("auto", "cover" and "contain"), 
+--the one-value syntax (sets the width of the image (height becomes "auto"), 
+--the two-value syntax (first value: width of the image, second value: height), and the multiple background syntax (separated with comma).
+    cover: 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges 	
+    contain: 	Resize the background image to make sure the image is fully visible
+
+background:
+*********************
+--background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment
+
+body {
+  background: lightblue url("img_tree.gif") no-repeat fixed center;
+}
+
+--It does not matter if one of the property values is missing, as long as the other ones are in this order.
